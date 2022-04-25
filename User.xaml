@@ -1,0 +1,20 @@
+﻿<Page x:Class="WpfApp1.User"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="User">
+
+    <Grid>
+        <Frame x:Name="Main" Background="#FFDEFFD3" />
+        <TextBlock HorizontalAlignment="Center" Margin="0,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="320" FontFamily="Onyx" FontSize="36" TextAlignment="Center"><Run Text="Welcome! "/><LineBreak/><Run Text="Ready to get to studying?"/></TextBlock>
+        <Button Content="Let's get started!" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Height="71" Width="240" Click="ToTopics" Background="#FF27DC64"/>
+        <Label x:Name="userlbl" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="270,279,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.996,0.579" Width="240" Height="50" FontFamily="Onyx" FontSize="24"/>
+        <TextBox x:Name="MainTextBox" HorizontalAlignment="Center" Margin="0,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" Height="38" TextChanged="TextBox_TextChanged" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="147,175,0,0" TextWrapping="Wrap" Text="Enter your name:" VerticalAlignment="Top" Height="35" Width="129" FontSize="16"/>
+        <Button x:Name="AddName" Content="Add Name" HorizontalAlignment="Center" Margin="0,243,0,0" VerticalAlignment="Top" Height="36" Width="96" Background="#FF27DC64" Click="AddName_Click"/>
+    </Grid>
+</Page>

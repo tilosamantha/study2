@@ -1,0 +1,21 @@
+﻿<Page x:Class="WpfApp1.QuestionSelection"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="QuestionSelection">
+
+    <Grid Background="#FFDEFFD3">
+        <Frame x:Name="Main" />
+
+        <TextBlock x:Name="PageLabel" HorizontalAlignment="Center" Margin="0,126,0,0" TextWrapping="Wrap" Text="Please select how many questions you'd like to be quizzed on:" VerticalAlignment="Top" Height="99" Width="334" FontFamily="Onyx" FontSize="40" FontWeight="Normal" FontStyle="Normal" Foreground="#FF27DC64"/>
+
+        <Button x:Name="smallQuiz" Content="2" Click ="quiz1" HorizontalAlignment="Left" Margin="50,294,0,0" VerticalAlignment="Top" Height="84" Width="200" FontSize="20" FontFamily="Baskerville Old Face"/>
+        <Button x:Name="medQuiz" Content="5" Click ="quiz2" HorizontalAlignment="Center" Margin="0,294,0,0" VerticalAlignment="Top" Height="84" Width="200" FontSize="20" FontFamily="Baskerville Old Face"/>
+        <Button x:Name="largeQuiz" Content="7" Click ="quiz3" HorizontalAlignment="Left" Margin="550,294,0,0" VerticalAlignment="Top" Height="84" Width="200" FontSize="20" FontFamily="Baskerville Old Face"/>
+        <TextBlock HorizontalAlignment="Left" Margin="936,210,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

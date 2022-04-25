@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="addNewTopic.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BeginQuiz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FinalScore.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QuestionSelection.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QuestionSlide.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Topics.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WelcomeScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="addNewTopic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BeginQuiz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FinalScore.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="QuestionSelection.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="QuestionSlide.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Topics.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WelcomeScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
