@@ -1,0 +1,21 @@
+﻿<Page x:Class="WpfApp1.Topics"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Topics">
+
+    <Grid Background="#FFDEFFD3">
+        <Frame x:Name="Main" />
+
+        <TextBlock x:Name="PageLabel" HorizontalAlignment="Left" Margin="276,110,0,0" TextWrapping="Wrap" Text="Please select a topic to quiz on:"  FontFamily="Onyx" FontSize="40" FontWeight="Normal" FontStyle="Normal" Foreground="#FF27DC64" VerticalAlignment="Top" Height="63" Width="300"/>
+
+        <Button x:Name="CSharp" Content="C#" Click="pickQuestions1" HorizontalAlignment="Left" Margin="100,225,0,0" VerticalAlignment="Top" Height="84" Width="200" FontSize="20" FontFamily="Baskerville Old Face"/>
+        <Button x:Name="J" Content="Java" Click="pickQuestions2" HorizontalAlignment="Center" Margin="50,225,0,0" VerticalAlignment="Top" Height="84" Width="200" FontSize="20" FontFamily="Baskerville Old Face"/>
+        <Button x:Name="S" Content="SQL" Click="pickQuestions3" HorizontalAlignment="Left" Margin="550,225,0,0" VerticalAlignment="Top" Height="84" Width="200" FontSize="20" FontFamily="Baskerville Old Face"/>
+        <Button Content="Add a new topic" Click="newTopic" HorizontalAlignment="Left" Margin="301,331,0,0" VerticalAlignment="Top" Background="#FF27DC64" Width="249" Height="46" FontSize="20" FontFamily="Baskerville Old Face"/>
+    </Grid>
+</Page>
