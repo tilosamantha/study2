@@ -12,16 +12,11 @@
         <TextBlock x:Name="ScoreLabel" HorizontalAlignment="Center" Margin="0,45,0,0" TextWrapping="Wrap" Text="YOUR SCORE:" VerticalAlignment="Top" Height="56" Width="138" TextAlignment="Center" FontFamily="Onyx" FontSize="36"/>
         <Button x:Name="HomeBtn" Content="HOME" HorizontalAlignment="Left" Margin="246,343,0,0" VerticalAlignment="Top" Background="#FF27DC64" Height="42" Width="91" Click="HomeBtn_Click"/>
         <Button x:Name="Retakebtn" Content="RETRY QUIZ" HorizontalAlignment="Left" Margin="458,343,0,0" VerticalAlignment="Top" Background="#FF27DC64" Height="42" Width="98" Click="Retakebtn_Click"/>
-        <TextBlock x:Name="TopScoreInfo" HorizontalAlignment="Center" Margin="0,162,0,0" TextWrapping="Wrap" Text="Top Score For {Topic} quiz" VerticalAlignment="Top" Height="55" Width="172" FontFamily="Onyx" FontSize="22" TextAlignment="Center"/>
-        <Label Margin="350,118,350,0" x:Name="score" HorizontalContentAlignment="Center" Content="testLabel" VerticalAlignment="Top" Height="25" RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
+        <TextBlock x:Name="TopScoreInfo" HorizontalAlignment="Center" Margin="0,162,0,0" TextWrapping="Wrap" Text="Recent Scores" VerticalAlignment="Top" Height="29" Width="172" FontFamily="Onyx" FontSize="22" TextAlignment="Center"/>
+        <Label x:Name="Score" HorizontalAlignment="Center" Margin="0,106,0,0" Content="{}{Score}" VerticalAlignment="Top" Height="24" Width="40"/>
+        <Label Content="USER" HorizontalAlignment="Left" Margin="246,186,0,0" VerticalAlignment="Top"/>
+        <Label Content="Topic" HorizontalAlignment="Center" Margin="0,186,0,0" VerticalAlignment="Top"/>
+        <Label Content="Score" HorizontalAlignment="Left" Margin="507,186,0,0" VerticalAlignment="Top"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="246,217,210,121" SelectionChanged="ListBox_SelectionChanged"/>
     </Grid>
 </Page>

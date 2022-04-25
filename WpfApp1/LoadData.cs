@@ -22,7 +22,16 @@ namespace WpfApp1
         //AnswerBank answerBank = new AnswerBank();
 
         IDictionary<int, string>? topicBank = new Dictionary<int, string>();
-        IDictionary<int, string>? questionBank = new Dictionary<int, string>();
+        // IDictionary<int, string>? questionBank = new Dictionary<int, string>();
+
+       public static IDictionary<int, string> questionBank = new Dictionary<int, string>()
+        {
+            [0] = "A variable defined by a class", //field
+            [1] = "Symbols which transform and combine expressions", //operator
+            [2] = "Introduces a new class", //clss statement
+            [3] = "Data type that returns either true or false" //boolean
+        };
+
         IDictionary<int, string>? answerBank = new Dictionary<int, string>();
 
         /// <summary>

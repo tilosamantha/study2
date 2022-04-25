@@ -22,6 +22,7 @@ namespace WpfApp1
     /// </summary>
     public partial class addNewTopic : Page
     {
+
         public addNewTopic()
         {
             InitializeComponent();

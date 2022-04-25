@@ -8,23 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="User">
 
-    <Grid Background="#FFDEFFD3">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="11*"/>
-            <ColumnDefinition Width="188*"/>
-        </Grid.ColumnDefinitions>
-        <Label x:Name="title" Grid.Column="2" Content="STUDY AID" HorizontalAlignment="Center" Margin="0,63,0,0" VerticalAlignment="Top" FontFamily="Onyx" FontSize="72" FontWeight="Normal" FontStyle="Normal" Foreground="#FF27DC64"/>
-        
-        <Button x:Name="LogIn" Grid.Column="2" Content="LOG IN" HorizontalAlignment="Left" Margin="327,240,0,0" VerticalAlignment="Top" Background="#FF27DC64" FontSize="22" Click="LogInExistingUser" FontFamily="Onyx" Height="48" Width="76"/>
-        <Button x:Name="Button2" Grid.Column="2" Content="Create New User" HorizontalAlignment="Left" Margin="316,363,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="24" FontFamily="Onyx" Click="Button2_Click"/>
-        <TextBlock x:Name="Login_Prompt" Grid.Column="2" HorizontalAlignment="Left" Margin="319,318,0,0" TextWrapping="Wrap" Text="New Here?" VerticalAlignment="Top" FontSize="20" FontFamily="Baskerville Old Face"/>
-        <Rectangle Grid.Column="2" HorizontalAlignment="Center" Height="3" Margin="0,301,0,0" Stroke="Black" VerticalAlignment="Top" Width="616" Fill="Black"/>
-        
-        <TextBox x:Name="textBoxUsername" Grid.Column="2" HorizontalAlignment="Left" Margin="256,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
-        <PasswordBox x:Name="textBoxPassword" Grid.Column="2" HorizontalAlignment="Left" Margin="256,0,0,0"  VerticalAlignment="Center" Width="250"/>
-        <TextBlock x:Name="UsernameTag" Grid.Column="2" HorizontalAlignment="Left" Margin="178,161,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top"/>
-        <TextBlock x:Name="PasswordTag" Grid.Column="2" HorizontalAlignment="Left" Margin="182,0,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center"/>
-
+    <Grid>
+        <Frame x:Name="Main" Background="#FFDEFFD3" />
+        <TextBlock HorizontalAlignment="Center" Margin="0,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="320" FontFamily="Onyx" FontSize="36" TextAlignment="Center"><Run Text="Welcome! "/><LineBreak/><Run Text="Ready to get to studying?"/></TextBlock>
+        <Button Content="Let's get started!" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Height="71" Width="240" Click="ToTopics" Background="#FF27DC64"/>
+        <Label x:Name="userlbl" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="270,279,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.996,0.579" Width="240" Height="50" FontFamily="Onyx" FontSize="24"/>
+        <TextBox x:Name="MainTextBox" HorizontalAlignment="Center" Margin="0,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" Height="38" TextChanged="TextBox_TextChanged" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="147,175,0,0" TextWrapping="Wrap" Text="Enter your name:" VerticalAlignment="Top" Height="35" Width="129" FontSize="16"/>
+        <Button x:Name="AddName" Content="Add Name" HorizontalAlignment="Center" Margin="0,243,0,0" VerticalAlignment="Top" Height="36" Width="96" Background="#FF27DC64" Click="AddName_Click"/>
     </Grid>
 </Page>

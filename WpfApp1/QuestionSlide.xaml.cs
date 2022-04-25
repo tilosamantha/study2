@@ -22,7 +22,10 @@ namespace WpfApp1
     {
         public Quiz MyQuiz = new();
 
-        IDictionary<int, string> questionBank = new Dictionary<int, string>()
+
+        static int questionCounter = Quiz.CurrentQuestion;
+
+        public static IDictionary<int, string> questionBank = new Dictionary<int, string>()
         {
             [0] = "A variable defined by a class", //field
             [1] = "Symbols which transform and combine expressions", //operator
@@ -30,15 +33,14 @@ namespace WpfApp1
             [3] = "Data type that returns either true or false" //boolean
         };
 
-        static int questionCounter = Quiz.CurrentQuestion;
-
         Quiz newQuiz = new(Quiz.TotalQuestions, questionCounter++, "C#");
 
         public QuestionSlide(Quiz myQuiz)
         {
             //display the next question
-            Console.WriteLine($"Constructor accessing QuestionBank[{Quiz.CurrentQuestion}]: " + questionBank[Quiz.CurrentQuestion]);
+            Console.WriteLine($"Constructor accessing QuestionBank[{Quiz.CurrentQuestion}]: " + LoadData.questionBank[Quiz.CurrentQuestion]);
             MyQuiz = myQuiz;
+            //Option.Content = questionBank[0];
             InitializeComponent();
         }
 

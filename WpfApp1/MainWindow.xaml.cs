@@ -31,7 +31,7 @@ namespace WpfApp1
             Main.Content = new QuestionSelection(myQuiz);
            
             //topicPage = new Topics(myQuiz);
-           // Main.Content = topicPage;
+           //Main.Content = new User();
         }
     }
 }

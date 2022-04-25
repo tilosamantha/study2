@@ -23,13 +23,13 @@ namespace WpfApp1
         public static Quiz MyQuiz = new();
         public static QuestionSlide newSlide = new(MyQuiz);
 
-        IDictionary<int, string> questionBank = new Dictionary<int, string>()
-        {
-            [0] = "A variable defined by a class", //field
-            [1] = "Symbols which transform and combine expressions", //operator
-            [2] = "Introduces a new class", //clss statement
-            [3] = "Data type that returns either true or false" //boolean
-        };
+        //IDictionary<int, string> questionBank = new Dictionary<int, string>()
+        //{
+        //    [0] = "A variable defined by a class", //field
+        //    [1] = "Symbols which transform and combine expressions", //operator
+        //    [2] = "Introduces a new class", //clss statement
+        //    [3] = "Data type that returns either true or false" //boolean
+        //};
 
         public QuestionSelection(Quiz myQuiz)
         {
@@ -39,20 +39,20 @@ namespace WpfApp1
 
         private void quiz1(object sender, RoutedEventArgs e)
         {
-            newSlide.testLabel.Content = questionBank[0];
+            //newSlide.testLabel.Content = questionBank[0];
             NavigationService.Navigate(newSlide);
         }
 
         private void quiz2(object sender, RoutedEventArgs e)
         {
             //Quiz.totalQuestions = (int)medQuiz.Content;
-            NavigationService.Navigate(new QuestionSlide(MyQuiz));
+            //NavigationService.Navigate(new QuestionSlide(MyQuiz));
         }
 
         private void quiz3(object sender, RoutedEventArgs e)
         {
            // Quiz.totalQuestions = (int)largeQuiz.Content;
-            NavigationService.Navigate(new QuestionSlide(MyQuiz));
+            //NavigationService.Navigate(new QuestionSlide(MyQuiz));
         }
 
     }
